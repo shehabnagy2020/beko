@@ -1,0 +1,1 @@
+{"ast":null,"code":"const convertToFormdata = obj => {\n  const formdata = new FormData();\n\n  for (const key in obj) {\n    if (Object.hasOwnProperty.call(obj, key)) {\n      const element = obj[key];\n      formdata.append(key, element);\n    }\n  }\n\n  return formdata;\n};\n\nexport default convertToFormdata;","map":null,"metadata":{},"sourceType":"module"}

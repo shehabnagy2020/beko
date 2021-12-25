@@ -1,0 +1,33 @@
+* {
+  transition: 0.3s all !important;
+  outline: none !important;
+}
+
+.outline-none {
+  outline: none !important;
+}
+
+.fade-appear {
+  opacity: 0;
+  transition: all 300ms ease-in;
+}
+.fade-appear-active {
+  opacity: 1;
+}
+.fade-enter {
+  opacity: 0;
+  transition: all 300ms ease-in;
+}
+.fade-enter-active {
+  opacity: 1;
+}
+.fade-exit {
+  opacity: 1;
+  transition: all 300ms ease-in;
+}
+.fade-exit-active {
+  opacity: 0;
+}
+.rdt_Table .rdt_TableHead .rdt_TableHeadRow {
+  font-size: medium;
+}

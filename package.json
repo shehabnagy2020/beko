@@ -1,0 +1,31 @@
+{
+  "name": "beko_dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "watch:tailwind": "npx tailwindcss build public/styles/dev/tailwind.css -o public/styles/prod/tailwind.css",
+    "watch:custom": "sass public/styles/dev/custom.scss:public/styles/prod/custom.css --watch --no-source-map --style=compressed"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.2.3",
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "js-cookie": "^2.2.1",
+    "moment": "^2.29.1",
+    "next": "10.0.5",
+    "next-connect": "^0.9.1",
+    "next-cookies": "^2.0.3",
+    "postcss": "^8.2.4",
+    "react": "17.0.1",
+    "react-data-table-component": "^7.4.5",
+    "react-dom": "17.0.1",
+    "react-transition-group": "^4.4.1",
+    "styled-components": "^5.3.3",
+    "swiper": "^6.5.6",
+    "tailwindcss": "^2.0.2",
+    "tawkto-react": "^2.0.3"
+  }
+}

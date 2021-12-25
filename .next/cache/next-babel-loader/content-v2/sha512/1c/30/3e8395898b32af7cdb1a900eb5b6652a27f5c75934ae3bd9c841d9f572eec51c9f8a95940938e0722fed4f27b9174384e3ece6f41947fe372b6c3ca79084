@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport React from \"react\";\n\nvar Home = function Home() {\n  return /*#__PURE__*/_jsx(\"div\", {\n    className: \"\"\n  });\n};\n\nexport var __N_SSP = true;\nexport default Home;","map":null,"metadata":{},"sourceType":"module"}

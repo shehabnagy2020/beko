@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { CATEGORIES_TYPES } from \"./CONST\";\n\nconst getTypeName = type => {\n  let [t] = CATEGORIES_TYPES.filter(i => i.value == type);\n  return t ? t.name : \"\";\n};\n\nexport default getTypeName;","map":null,"metadata":{},"sourceType":"module"}

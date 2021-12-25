@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport React from \"react\";\n\nconst Card = ({\n  className,\n  children\n}) => {\n  return /*#__PURE__*/_jsx(\"div\", {\n    className: `bg-white p-5 rounded-lg shadow-lg flex flex-col ${className}`,\n    children: children\n  });\n};\n\nexport default Card;","map":null,"metadata":{},"sourceType":"module"}
