@@ -4,7 +4,7 @@ const path = require("path");
 const expressApp = express();
 const { parse } = require("url");
 const next = require("next");
-const PORT = 3005;
+const PORT = 3012;
 const app = next({ dev: false });
 const handle = app.getRequestHandler();
 
