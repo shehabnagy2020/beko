@@ -307,7 +307,7 @@ function MyApp({
         name: "viewport",
         content: "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
       }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("title", {
-        children: "Beko Dashboard"
+        children: "Sovio Dashboard"
       })]
     }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])(Index, {
       children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(Component, _objectSpread({}, pageProps)), /*#__PURE__*/Object(jsx_runtime_["jsx"])(Modals_NewOrdersModal, {})]
@@ -937,8 +937,7 @@ module.exports = _interopRequireDefault;
 const EMPTY_CATEGORIES = {
   image: "",
   name: "",
-  type: "service",
-  parent_id: null
+  type: "service"
 };
 const EMPTY_SUBCATEGORIES = {
   image: "",
@@ -992,7 +991,7 @@ const CATEGORIES_TYPES = [{
 }];
 const TAWKTO_ID = "6075d28f067c2605c0c210b3";
 const TAWKTO_KEY = "1f363t04v";
-const API = "https://api.sovio.net";
+const API = "https://bekoapi.sovio.net";
 
 /***/ }),
 

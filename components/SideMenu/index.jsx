@@ -20,7 +20,7 @@ const SideMenu = ({ className, isSidemenuOpen, setIsSidemenuOpen }) => {
               account_circle
             </div>
             <span className="capitalize text-white font-semibold text-2xl">
-              Beko
+              Sovio
             </span>
           </div>
           <div className="flex flex-col w-full space-y-3">

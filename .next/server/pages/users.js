@@ -667,7 +667,7 @@ const SideMenu = ({
           children: "account_circle"
         }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
           className: "capitalize text-white font-semibold text-2xl",
-          children: "Beko"
+          children: "Sovio"
         })]
       }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
         className: "flex flex-col w-full space-y-3",
@@ -1380,8 +1380,7 @@ module.exports = _interopRequireDefault;
 const EMPTY_CATEGORIES = {
   image: "",
   name: "",
-  type: "service",
-  parent_id: null
+  type: "service"
 };
 const EMPTY_SUBCATEGORIES = {
   image: "",
@@ -1435,7 +1434,7 @@ const CATEGORIES_TYPES = [{
 }];
 const TAWKTO_ID = "6075d28f067c2605c0c210b3";
 const TAWKTO_KEY = "1f363t04v";
-const API = "https://api.sovio.net";
+const API = "https://bekoapi.sovio.net";
 
 /***/ }),
 

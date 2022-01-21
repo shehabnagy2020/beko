@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps, props }) {
           name="viewport"
           content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
         />
-        <title>Beko Dashboard</title>
+        <title>Sovio Dashboard</title>
       </Head>
       <MainContext>
         <Component {...pageProps} />

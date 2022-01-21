@@ -829,7 +829,7 @@ const SideMenu = ({
           children: "account_circle"
         }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
           className: "capitalize text-white font-semibold text-2xl",
-          children: "Beko"
+          children: "Sovio"
         })]
       }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
         className: "flex flex-col w-full space-y-3",
@@ -1006,6 +1006,7 @@ const CategoriesCard = ({
   handleAdd,
   loader
 }) => {
+  console.log(item);
   const {
     0: info,
     1: setInfo
@@ -1033,8 +1034,8 @@ const CategoriesCard = ({
   const onHandleEdit = handleEdit ? () => {
     const formdata = new FormData();
     console.log(info);
-    formdata.append("name", info.name);
-    formdata.append("parent_id", info.parent_id);
+    formdata.append("name", info.name); // formdata.append("parent_id", info.parent_id);
+
     formdata.append("type", info.type);
 
     if (info.image_obj) {
@@ -1045,19 +1046,19 @@ const CategoriesCard = ({
       formdata.append("id", info.id);
     }
 
-    if (!Object(helper_isMissingSomething__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(info)) handleEdit(formdata);
+    if (!Object(helper_isMissingSomething__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(info, ["parent_id", "type"])) handleEdit(formdata);
   } : null;
   const onHandleAdd = handleAdd ? () => {
     const formdata = new FormData();
-    formdata.append("name", info.name);
-    formdata.append("parent_id", info.parent_id);
+    formdata.append("name", info.name); // formdata.append("parent_id", info.parent_id);
+
     formdata.append("type", info.type);
 
     if (info.image_obj) {
       formdata.append("image", info.image_obj);
     }
 
-    if (!Object(helper_isMissingSomething__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(info)) handleAdd(formdata);
+    if (!Object(helper_isMissingSomething__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(info, ["parent_id", "type"])) handleAdd(formdata);
   } : null;
 
   const handleChooseCategory = (id, v) => {
@@ -1486,8 +1487,7 @@ module.exports = _interopRequireDefault;
 const EMPTY_CATEGORIES = {
   image: "",
   name: "",
-  type: "service",
-  parent_id: null
+  type: "service"
 };
 const EMPTY_SUBCATEGORIES = {
   image: "",
@@ -1541,7 +1541,7 @@ const CATEGORIES_TYPES = [{
 }];
 const TAWKTO_ID = "6075d28f067c2605c0c210b3";
 const TAWKTO_KEY = "1f363t04v";
-const API = "https://api.sovio.net";
+const API = "https://bekoapi.sovio.net";
 
 /***/ }),
 

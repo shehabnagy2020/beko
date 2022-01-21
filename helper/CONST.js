@@ -2,7 +2,6 @@ export const EMPTY_CATEGORIES = {
   image: "",
   name: "",
   type: "service",
-  parent_id: null,
 };
 export const EMPTY_SUBCATEGORIES = {
   image: "",
@@ -53,4 +52,4 @@ export const CATEGORIES_TYPES = [
 export const TAWKTO_ID = "6075d28f067c2605c0c210b3";
 export const TAWKTO_KEY = "1f363t04v";
 
-export const API = "https://api.sovio.net";
+export const API = "https://bekoapi.sovio.net";

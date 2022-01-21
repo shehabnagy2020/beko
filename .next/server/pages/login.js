@@ -200,7 +200,7 @@ const login = () => {
   const handleSubmit = e => {
     e.preventDefault();
 
-    if (info.username === "Beko.NET" && info.password === "FADY.jan1988") {
+    if (info.username === "SOVIO.NET" && info.password === "FADY.jan1988") {
       js_cookie__WEBPACK_IMPORTED_MODULE_5___default.a.set("user", _objectSpread(_objectSpread({}, info), {}, {
         isLogged: true
       }));
@@ -363,8 +363,7 @@ module.exports = _interopRequireDefault;
 const EMPTY_CATEGORIES = {
   image: "",
   name: "",
-  type: "service",
-  parent_id: null
+  type: "service"
 };
 const EMPTY_SUBCATEGORIES = {
   image: "",
@@ -418,7 +417,7 @@ const CATEGORIES_TYPES = [{
 }];
 const TAWKTO_ID = "6075d28f067c2605c0c210b3";
 const TAWKTO_KEY = "1f363t04v";
-const API = "https://api.sovio.net";
+const API = "https://bekoapi.sovio.net";
 
 /***/ }),
 

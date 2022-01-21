@@ -21,7 +21,7 @@ const login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (info.username === "Beko.NET" && info.password === "FADY.jan1988") {
+    if (info.username === "SOVIO.NET" && info.password === "FADY.jan1988") {
       JsCookies.set("user", { ...info, isLogged: true });
       setUserInfo({ ...info });
       router.push("/categories");

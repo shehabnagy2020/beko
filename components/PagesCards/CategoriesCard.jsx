@@ -14,6 +14,7 @@ const CategoriesCard = ({
   handleAdd,
   loader,
 }) => {
+  console.log(item);
   const [info, setInfo] = useState({ ...EMPTY_CATEGORIES });
   const { categories } = useContext(HelperContext);
   useEffect(() => {
@@ -30,7 +31,7 @@ const CategoriesCard = ({
         const formdata = new FormData();
         console.log(info);
         formdata.append("name", info.name);
-        formdata.append("parent_id", info.parent_id);
+        // formdata.append("parent_id", info.parent_id);
         formdata.append("type", info.type);
         if (info.image_obj) {
           formdata.append("image", info.image_obj);
@@ -38,19 +39,21 @@ const CategoriesCard = ({
         if (info.id) {
           formdata.append("id", info.id);
         }
-        if (!isMissingSomething(info)) handleEdit(formdata);
+        if (!isMissingSomething(info, ["parent_id", "type"]))
+          handleEdit(formdata);
       }
     : null;
   const onHandleAdd = handleAdd
     ? () => {
         const formdata = new FormData();
         formdata.append("name", info.name);
-        formdata.append("parent_id", info.parent_id);
+        // formdata.append("parent_id", info.parent_id);
         formdata.append("type", info.type);
         if (info.image_obj) {
           formdata.append("image", info.image_obj);
         }
-        if (!isMissingSomething(info)) handleAdd(formdata);
+        if (!isMissingSomething(info, ["parent_id", "type"]))
+          handleAdd(formdata);
       }
     : null;
 
